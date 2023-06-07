@@ -63,7 +63,7 @@ FinSubProceso
 //Si se ingresa una vocal se muestra el mensaje con su respectivo valor ASCII 
 //Si cumple esa condicion se muestra el mensaje "La vocal 'a' en codigo ASCII es 97"
 //Se ingresa por teclado el caracter: b
-//Se evalua y si no se ingresa una vocal se muestra el mensaje "El carácter ingresado no es una vocal".
+//Se evalua y si no se ingresa una vocal se muestra el mensaje "El carácter ingresado no es una vocal"
 Funcion  ejercicio3()
 	
 	Definir x Como Caracter;
@@ -120,7 +120,7 @@ FinFuncion
 //Si los nombres son iguales se muestra el mensaje "Los nombres son iguales" 
 //Si los nombres no son iguales 
 //se compara si el primer nombre es menor o mayor que el segundo nombre utilizando el operador de menor (<) 
-//Si el primer nombre es menor se muestra el mensaje "El primer nombre es menor que el segundo". 
+//Si el primer nombre es menor se muestra el mensaje "El primer nombre es menor que el segundo"
 //Si el primer nombre no es menor se asume que es mayor y se muestra el mensaje "El primer nombre es mayor que el segundo"
 Funcion  ejercicio4()
 	Definir x,z Como Caracter;
@@ -331,7 +331,7 @@ SubProceso ejercicio10()
 FinSubProceso
 
 //Se solicita al usuario ingresar el precio por kilo de uva
-//La cantidad de kilos comprados, el tipo de uva (A o B) y el tamaño de uva (1 o 2) 
+//La cantidad de kilos comprados el tipo de uva (A o B) y el tamaño de uva (1 o 2) 
 //Luego se realizan una serie de cálculos para determinar el total a pagar y la ganancia obtenida
 //Si el tipo de uva es A y el tamaño de uva es 1 se suma 0.20 al precio inicial
 //Si el tipo de uva es A y el tamaño de uva es 2 se suma 0.30 al precio inicial
@@ -379,7 +379,7 @@ FinFuncion
 
 //Se solicita calcular el costo total para un viaje de alumnos en un bus 
 //El programa lee la cantidad de alumnos que van a viajar
-//En base a esa cantidad, 
+//En base a esa cantidad 
 //Se determina el costo individual por alumno y el costo total a pagar a la agencia 
 //El costo del alquiler del bus es fijo en $4000 
 //Al final se muestra el total a pagar a la agencia y el valor a pagar por estudiante
@@ -493,7 +493,7 @@ Funcion  ejercicio14()
 	
 FinFuncion
 
-//Se solicita al usuario ingresar la cantidad de productos comprados y el precio unitario del producto. 
+//Se solicita al usuario ingresar la cantidad de productos comprados y el precio unitario del producto
 //Se determina el descuento aplicable según la cantidad comprada 
 //Se calcula el total a pagar considerando los descuentos
 //Finalmente se muestra la cantidad comprada 
@@ -574,7 +574,7 @@ FinFuncion
 //El costo de fabricación según el código ingresado 
 //Se calcula el costo de producción sumando el costo de la materia prima
 //El costo de la mano de obra
-//El costo de fabricación. 
+//El costo de fabricación 
 //Finalmente se calcula el precio de venta agregando al costo de producción un 45% adicional.
 Funcion  ejercicio17()
 	
@@ -660,9 +660,9 @@ FinFuncion
 //Las variables "peso" y "resultado" como números reales
 //Se muestra una lista de las zonas disponibles y
 //Se solicita al usuario que ingrese el destino y el peso del paquete
-//Se verifica si el peso del paquete excede los 5000 gramos, 
+//Se verifica si el peso del paquete excede los 5000 gramos
 //En cuyo caso se muestra un mensaje indicando que no se puede transportar
-//De lo contrario, se utiliza una estructura de selección múltiple (según-segun) 
+//De lo contrario se utiliza una estructura de selección múltiple (según-segun) 
 //para determinar el costo del envío según la zona seleccionada 
 //El resultado se almacena en la variable "resultado" y se muestra en pantalla
 Funcion ejercicio19()
@@ -712,11 +712,17 @@ Funcion ejercicio19()
 
 FinFuncion
 
+
+//Definir las variables
+//Inicializar las variables a cero
+//Solicitar al usuario que ingrese por teclado el peso del alumno (0 para cerrar)
+//Iniciar un bucle mientras el peso ingresado debe ser diferente de cero
+//Se pide presentar cuantos alumnos hay por rango de peso y el promedio
 Funcion ejercicio20()
 	
-		Definir peso como real;
+	Definir peso como real;
 	Definir menosde40, entre40y50, mas50menos60, totalalumnos, masde60 como reales;
-    Definir sumamenos40, sumentre40y50, sumamas50menos60, sumamas60 como reales;
+    	Definir sumamenos40, sumentre40y50, sumamas50menos60, sumamas60 como reales;
 	Definir promenos40, proentre40y50, promas50menos60, promas60 como reales;
 	
 	menosde40 <- 0;
@@ -809,8 +815,8 @@ FinFuncion
 //Se definen las variables num1, num2 y num3 como enteros para almacenar los números ingresados por el usuario
 //Se solicita al usuario que ingrese los tres números
 //Luego se verifica si num1 es igual al doble de num2 
-//Si también es igual al 80% de num3. 
-//Dependiendo del resultado, 
+//Si también es igual al 80% de num3
+//Dependiendo del resultado 
 //se muestra un mensaje indicando que cumple con la condición indicada o que no cumple
 Funcion ejercicio22()
 	
@@ -940,7 +946,7 @@ FinFuncion
 //se define la variable x como un número entero
 //Se utiliza la estructura Para para iterar desde 1 hasta 100 con un paso de 1 
 //Dentro del bucle 
-//Se verifica si el valor de x es divisible por 2 (es decir, si es par) utilizando la operación mod 
+//Se verifica si el valor de x es divisible por 2 (es decir si es par) utilizando la operación mod 
 //Si la condición es verdadera se muestra en pantalla que el número es par
 Funcion ejercicio26()
 	
@@ -982,7 +988,7 @@ FinFuncion
 //Se le pide al usuario que ingrese por teclado la cantidad de personas y se almacena en la variable personas
 //Se inicializan las variables suma y promedio en 0
 //Luego se utiliza un bucle Para para iterar desde 1 hasta el valor ingresado en personas, con un paso de 1 
-//Dentro del bucle, se le pide al usuario que ingrese la edad de cada persona y se almacena en la variable edad
+//Dentro del bucle se le pide al usuario que ingrese la edad de cada persona y se almacena en la variable edad
 //Luego se suma el valor de edad a la variable suma
 //Después de que el bucle haya terminado de ejecutarse
 //Se calcula el promedio dividiendo la suma acumulada en suma entre el número de personas en personas y se almacena en la variable promedio
@@ -1014,7 +1020,7 @@ FinFuncion
 //Luego se le solicita que ingrese la cantidad de días trabajados en dias
 //Se calcula el pago diario multiplicando pagohora por horas y se almacena en la variable pagodiario
 //Luego se calcula el sueldo multiplicando pagodiario por dias y se almacena en la variable sueldo
-//Finalmente se muestran en pantalla los mensajes que indican el sueldo a pagar por los días de trabajo y 
+//Finalmente se muestran en pantalla los mensajes que indican el sueldo a pagar por los días de trabajo
 //El total a pagar por las horas trabajadas diariamente
 Funcion ejercicio29()
 	
@@ -1158,12 +1164,12 @@ FinFuncion
 
 //Se definen las variables categoria, sueldo, bono, sueldo10, sueldo20, sueldo50, bono10, bono20, bono50, maestros, auxiliar, agregado y principal 
 //con sus respectivos tipos de datos
-//Se le pide al usuario que ingrese la cantidad de maestros en maestros
+//Se le pide al usuario que ingrese la cantidad de maestros
 //Luego se inicializan las variables auxiliar, agregado, principal, sueldo10, sueldo20, sueldo50, bono10, bono20 y bono50 en 0
 //Se inicia un bucle Mientras que se ejecuta hasta que la suma de auxiliar, agregado y principal sea menor que maestros
 //Dentro del bucle
-//se solicita al usuario que ingrese la categoría del maestro en categoria
-//Según la categoría ingresada, se solicita el sueldo correspondiente y se calcula el bono
+//Se solicita al usuario que ingrese la categoría del maestro
+//Según la categoría ingresada se solicita el sueldo correspondiente y se calcula el bono
 //Se actualizan los contadores y totales de acuerdo a la categoría y se acumulan los sueldos y bonos correspondientes
 //Después de salir del bucle 
 //Se muestran en pantalla los promedios de sueldos y bonos para cada categoría
@@ -1282,12 +1288,12 @@ Funcion ejercicio33()
 	
 FinFuncion 
 
-//En este bosquejo te permite ingresar varios números hasta que se ingrese el número 0 
+//Ingresar varios números hasta que se ingrese el número 0 
 //Durante la repetición 
-//Se realiza la suma de los números distintos de cero y se incrementa el contador totaldenumeros
-//Cuando se ingresa el número 0, se verifica si se ingresaron números distintos de cero
-//Si es así, se calcula el promedio y se muestra la cantidad de números distintos de cero y el promedio
-//Si no se ingresaron números distintos de cero, se muestra un mensaje indicando que no se ingresaron valores
+//Se realiza la suma de los numeros distintos de cero y se incrementa el contador totaldenumeros
+//Cuando se ingresa el número 0 se verifica si se ingresaron números distintos de cero
+//Si es asi se calcula el promedio y se muestra la cantidad de numeros distintos de cero y el promedio
+//Si no se ingresaron números distintos de cero se muestra un mensaje indicando que no se ingresaron valores
 //La repetición continúa hasta que se ingrese el número 0
 Funcion ejercicio34()
 	
@@ -1318,8 +1324,8 @@ FinFuncion
 //Se solicita al usuario ingresar un numero positivo
 //Si el numero ingresado es mayor que cero y es multiplo de 3
 //Se incrementa el contador cantidad y se suma el numero al total 
-//El programa sigue solicitando números positivos hasta que se ingrese un número negativo
-//Finalmente se muestra la cantidad de números positivos múltiplos de 3 ingresados y el total de estos números
+//El programa sigue solicitando números positivos hasta que se ingrese un numero negativo
+//Finalmente se muestra la cantidad de números positivos múltiplos de 3 ingresados y el total de estos numeros
 Funcion ejercicio35()
 	
 	Definir n, n2, n3 Como entero;
