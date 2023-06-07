@@ -5,70 +5,70 @@
 //SUAREZ TOAPANTA IVAN DARIO
 
 //Se solicita al usuario que ingrese un caracter
-//Se evalua si el carácter ingresado está en el rango de letras mayusculas o minusculas
+//Se evalua si el carÃ¡cter ingresado estÃ¡ en el rango de letras mayusculas o minusculas
 //Si ingreso por teclado un caracter: a
 //Si se cumple esa condicion se muestra el mensaje "El caracter ingresado es una letra" 
-//Si no es una letra se verifica si es un signo de puntuacion en específico (punto y coma ,punto, coma y dos puntos)
+//Si no es una letra se verifica si es un signo de puntuacion en especÃ­fico (punto y coma ,punto, coma y dos puntos)
 //Si ingreso por teclado un caracter: .
-//Si se cumple alguna de esas condiciones se muestra el mensaje "El carácter ingresado es un signo de puntuación"
-//Si no se cumple ninguna de las condiciones anteriores se mostrara el carácter ingresado
+//Si se cumple alguna de esas condiciones se muestra el mensaje "El carÃ¡cter ingresado es un signo de puntuaciÃ³n"
+//Si no se cumple ninguna de las condiciones anteriores se mostrara el carÃ¡cter ingresado
 SubProceso ejercicio1()
 	Definir x Como Caracter;
-	Escribir 'Ingrese un carácter:';
+	Escribir 'Ingrese un carÃ¡cter:';
 	Leer x;
 	Si ((x>='A' Y x<='Z')) O ((x>='a' Y x<='z')) Entonces
-		Escribir ('El carácter ingresado es una letra.');
+		Escribir ('El carÃ¡cter ingresado es una letra.');
 	SiNo
 		Si (x='.') O (x=',') O (x=';') O (x=':') Entonces
-			Escribir 'El carácter ingresado es un signo de puntuacion.';
+			Escribir 'El carÃ¡cter ingresado es un signo de puntuacion.';
 		SiNo
-			Escribir 'El carácter ingresado es: ',x;
+			Escribir 'El carÃ¡cter ingresado es: ',x;
 		FinSi
 	FinSi
 	
 FinSubProceso
 
 //Se solicita al usuario que ingrese un caracter y luego se evaluar el valor ingresado
-//Si el carácter se encuentra en el rango de '0' a '9'
+//Si el carÃ¡cter se encuentra en el rango de '0' a '9'
 //Se ingresa por teclado el caracter: 5
 //Como 5 esta en un rango entre el 0 y el 9 
-//Se cumple la condicion y se muestra el mensaje "El carácter ingresado es un número entre 0 y 9"
+//Se cumple la condicion y se muestra el mensaje "El carÃ¡cter ingresado es un nÃºmero entre 0 y 9"
 //Si no se cumple la primera condicino y el usuario un caracter en especifico (a, e, i, o, u)
 //Se ingresa por teclado el caracter: a 
-//Si se cumple la condicion y se muestra el mensaje "El carácter ingresado es una voval entre a, e, i, o, u"
-//Si no se cumple ninguna condicion se muestra 'Error carácter ingresado no valido.'
+//Si se cumple la condicion y se muestra el mensaje "El carÃ¡cter ingresado es una voval entre a, e, i, o, u"
+//Si no se cumple ninguna condicion se muestra 'Error carÃ¡cter ingresado no valido.'
 SubProceso ejercicio2()
 	
 	Definir x Como Caracter;
 	
-	Escribir 'Ingrese un carácter:';
+	Escribir 'Ingrese un carÃ¡cter:';
 	Leer x;
 	
 	Si ((x>='0') Y (x<='9')) Entonces
-		Escribir 'El carácter ingresado es un número entre 0 y 9.';
+		Escribir 'El carÃ¡cter ingresado es un nÃºmero entre 0 y 9.';
 	SiNo
 		Si (x='a') O (x='e') O (x='i') O (x='o') O (x='u') Entonces
-			Escribir ('El carácter ingresado es una vocal entre a, e, i, o, u.');
+			Escribir ('El carÃ¡cter ingresado es una vocal entre a, e, i, o, u.');
 		SiNo
-			Escribir ('Error carácter ingresado no valido.');
+			Escribir ('Error carÃ¡cter ingresado no valido.');
 		FinSi
 	FinSi
 	
 FinSubProceso
 
-//Se solicita al usuario que ingrese un carácter
-//Luego se evalua el valor ingresado para determinar si es una vocal ya sea en minúscula como en mayuscula
+//Se solicita al usuario que ingrese un carÃ¡cter
+//Luego se evalua el valor ingresado para determinar si es una vocal ya sea en minÃºscula como en mayuscula
 //Se ingresa por teclado el caracter: a
 //Para cada vocal se muestra el mensaje que indica el valor ASCII asignado
 //Si se ingresa una vocal se muestra el mensaje con su respectivo valor ASCII 
 //Si cumple esa condicion se muestra el mensaje "La vocal 'a' en codigo ASCII es 97"
 //Se ingresa por teclado el caracter: b
-//Se evalua y si no se ingresa una vocal se muestra el mensaje "El carácter ingresado no es una vocal".
+//Se evalua y si no se ingresa una vocal se muestra el mensaje "El carÃ¡cter ingresado no es una vocal".
 Funcion  ejercicio3()
 	
 	Definir x Como Caracter;
 	
-	Escribir 'Ingrese un carácter:';
+	Escribir 'Ingrese un carÃ¡cter:';
 	Leer x;
 	
 	Si x ="a" Entonces
@@ -140,13 +140,13 @@ Funcion  ejercicio4()
 	
 FinFuncion 
 
-//Se solicita al usuario que se por teclado ingrese dos números enteros. 
-//Se compara si los números son iguales utilizando el operador de igualdad (=) 
-//Si los números son iguales se muestra el mensaje "Los números son iguales"
-//Si los números no son iguales 
-//se compara si el primer número es menor o mayor que el segundo número utilizando el operador de menor (<) 
-//Si el primer número es menor se muestra el mensaje "El primer número es menor que el segundo" 
-//Si el primer número no es menor se asume que es mayor y se muestra el mensaje "El primer número es mayor que el segundo"
+//Se solicita al usuario que se por teclado ingrese dos nÃºmeros enteros. 
+//Se compara si los nÃºmeros son iguales utilizando el operador de igualdad (=) 
+//Si los nÃºmeros son iguales se muestra el mensaje "Los nÃºmeros son iguales"
+//Si los nÃºmeros no son iguales 
+//se compara si el primer nÃºmero es menor o mayor que el segundo nÃºmero utilizando el operador de menor (<) 
+//Si el primer nÃºmero es menor se muestra el mensaje "El primer nÃºmero es menor que el segundo" 
+//Si el primer nÃºmero no es menor se asume que es mayor y se muestra el mensaje "El primer nÃºmero es mayor que el segundo"
 SubProceso ejercicio5()
 	
 	Definir x,z Como Entero;
@@ -166,16 +166,16 @@ SubProceso ejercicio5()
 	
 FinSubProceso
 
-//Se solicita al usuario que ingrese por teclado dos números enteros
-//Se compara si los números son iguales utilizando el operador de igualdad (=) 
+//Se solicita al usuario que ingrese por teclado dos nÃºmeros enteros
+//Se compara si los nÃºmeros son iguales utilizando el operador de igualdad (=) 
 //Si los numeros son iguales 
-//Se muestra el mensaje "Los números son iguales"
-//Si los números no son iguales
-//Se compara si el primer número es menor o mayor que el segundo número utilizando el operador de menor (<) 
-//Si el primer número es menor
-//Se muestra el mensaje "El primer número es menor que el segundo"
-//Si el primer número no es menor 
-//Se asume que es mayor y se muestra el mensaje "El primer número es mayor que el segundo"
+//Se muestra el mensaje "Los nÃºmeros son iguales"
+//Si los nÃºmeros no son iguales
+//Se compara si el primer nÃºmero es menor o mayor que el segundo nÃºmero utilizando el operador de menor (<) 
+//Si el primer nÃºmero es menor
+//Se muestra el mensaje "El primer nÃºmero es menor que el segundo"
+//Si el primer nÃºmero no es menor 
+//Se asume que es mayor y se muestra el mensaje "El primer nÃºmero es mayor que el segundo"
 Funcion  ejercicio6()
 	
 	Definir x,z,w Como Entero;
@@ -201,14 +201,14 @@ Funcion  ejercicio6()
 FinFuncion
 
 //Se solicita al usuario que ingrese por teclado un numero entero
-//Se evalúa el número ingresado
-//Si el número es igual a 0
-//se muestra el mensaje "Es un número neutro"
-//Si el número es mayor que 0 
-//Se muestra el mensaje "Es un número positivo"
+//Se evalÃºa el nÃºmero ingresado
+//Si el nÃºmero es igual a 0
+//se muestra el mensaje "Es un nÃºmero neutro"
+//Si el nÃºmero es mayor que 0 
+//Se muestra el mensaje "Es un nÃºmero positivo"
 //Si ninguna de las condiciones se cumple 
-//Se asume que el número es menor que 0
-//Se muestra el mensaje "Es un número negativo"
+//Se asume que el nÃºmero es menor que 0
+//Se muestra el mensaje "Es un nÃºmero negativo"
 SubProceso ejercicio7()
 
 	Definir x Como Entero;
@@ -229,15 +229,15 @@ SubProceso ejercicio7()
 FinSubProceso
 
 //Se solicita al usuario que ingrese por teclado la cantidad de lapices que desea comprar
-//Se evalúa la cantidad ingresada utilizando una condicion
+//Se evalÃºa la cantidad ingresada utilizando una condicion
 //Si la cantidad de lapices es mayor que 1000
-//Se calcula el total a pagar multiplicando la cantidad de lápices por 1 
+//Se calcula el total a pagar multiplicando la cantidad de lÃ¡pices por 1 
 //El resultado se almacena en la variable resultado2 
-//Se muestra el mensaje "El total a pagar por comprar más de 1000 lápices: $ " seguido del valor de resultado2 
-//Si la cantidad de lápices es menor o igual a 1000
-//Se calcula el total a pagar multiplicando la cantidad de lápices por 1.50
+//Se muestra el mensaje "El total a pagar por comprar mÃ¡s de 1000 lÃ¡pices: $ " seguido del valor de resultado2 
+//Si la cantidad de lÃ¡pices es menor o igual a 1000
+//Se calcula el total a pagar multiplicando la cantidad de lÃ¡pices por 1.50
 //El resultado se almacena en la variable resultado2 
-//Se muestra el mensaje "El total a pagar por menos de 1000 lápices: $ " seguido del valor de resultado2.
+//Se muestra el mensaje "El total a pagar por menos de 1000 lÃ¡pices: $ " seguido del valor de resultado2.
 SubProceso ejercicio8()
 	
 	Definir lapices Como Entero;
@@ -257,7 +257,7 @@ SubProceso ejercicio8()
 FinSubProceso
 
 //Selicita al usuario que ingrese el valor a pagar por un traje 
-//Se evalua el precio inicial utilizando una condición 
+//Se evalua el precio inicial utilizando una condiciÃ³n 
 //Si el precio inicial es mayor que 2500
 //Se calcula el 15% de descuento (recioinicial multiplicado por 0.15)
 //Se almacena en la variable precio15
@@ -289,20 +289,20 @@ SubProceso ejercicio9()
 	
 FinSubProceso
 
-//Se solicita al usuario que ingrese el número de personas para un evento 
+//Se solicita al usuario que ingrese el nÃºmero de personas para un evento 
 //Se evalua la cantidad de personas utilizando una serie de condiciones 
-//Si el número de personas es menor que 200
+//Si el nÃºmero de personas es menor que 200
 //Se muestra el mensaje "El valor a pagar por cada plato es de $ 95 por persona"
 //Calculamos el total a pagar multiplicando el numero de personas por 95 y se almacena en la variable resultado4
 //Luego se muestra el mensaje "Total a pagar: $ " seguido del valor de resultado4
 //Si el numero de personas es mayor que 200 y menor o igual a 300 
-//Se muestra el mensaje "El valor a pagar por cada plato para más de 200 a 300 personas es de $ 85 por persona"
-//Se calcula el total a pagar multiplicando el número de personas por 85, y se almacena en la variable resultado4 
+//Se muestra el mensaje "El valor a pagar por cada plato para mÃ¡s de 200 a 300 personas es de $ 85 por persona"
+//Se calcula el total a pagar multiplicando el nÃºmero de personas por 85, y se almacena en la variable resultado4 
 //Luego se muestra el mensaje "Total a pagar: $ " seguido del valor de resultado4
 //Si no se cumple ninguna de las condiciones anteriores
 //Se asume que el numero de personas es mayor que 300
-//Se muestra el mensaje "El valor a pagar por cada plato para más de 300 personas es de $ 75 por persona"
-//Se calcula el total a pagar multiplicando el número de personas por 75, y se almacena en la variable resultado4 
+//Se muestra el mensaje "El valor a pagar por cada plato para mÃ¡s de 300 personas es de $ 75 por persona"
+//Se calcula el total a pagar multiplicando el nÃºmero de personas por 75, y se almacena en la variable resultado4 
 //Finalmente se muestra el mensaje "Total a pagar: $ " seguido del valor de resultado4.
 SubProceso ejercicio10()
 	
@@ -331,15 +331,15 @@ SubProceso ejercicio10()
 FinSubProceso
 
 //Se solicita al usuario ingresar el precio por kilo de uva
-//La cantidad de kilos comprados, el tipo de uva (A o B) y el tamaño de uva (1 o 2) 
-//Luego se realizan una serie de cálculos para determinar el total a pagar y la ganancia obtenida
-//Si el tipo de uva es A y el tamaño de uva es 1 se suma 0.20 al precio inicial
-//Si el tipo de uva es A y el tamaño de uva es 2 se suma 0.30 al precio inicial
-//Si el tipo de uva es B y el tamaño de uva es 1 se resta 0.30 al precio inicia
-//Si el tipo de uva es B y el tamaño de uva es 2 se resta 0.50 al precio inicial
+//La cantidad de kilos comprados, el tipo de uva (A o B) y el tamaÃ±o de uva (1 o 2) 
+//Luego se realizan una serie de cÃ¡lculos para determinar el total a pagar y la ganancia obtenida
+//Si el tipo de uva es A y el tamaÃ±o de uva es 1 se suma 0.20 al precio inicial
+//Si el tipo de uva es A y el tamaÃ±o de uva es 2 se suma 0.30 al precio inicial
+//Si el tipo de uva es B y el tamaÃ±o de uva es 1 se resta 0.30 al precio inicia
+//Si el tipo de uva es B y el tamaÃ±o de uva es 2 se resta 0.50 al precio inicial
 //Luego de calcular el total 
 //se multiplica por la cantidad de kilos comprados para obtener la ganancia total
-//Por último se muestra en pantalla el mensaje "La ganancia total es de: $" seguido del valor de la variable ganancia.
+//Por Ãºltimo se muestra en pantalla el mensaje "La ganancia total es de: $" seguido del valor de la variable ganancia.
 Funcion  ejercicio11()
 	
 	Definir tipouva Como Caracter;
@@ -352,7 +352,7 @@ Funcion  ejercicio11()
 	Leer kiloscomprados;
 	Escribir 'Ingrese el tipo de uva (A o B)';
 	Leer tipouva;
-	Escribir 'Ingrese el tamaño de uva (1 o 2)';
+	Escribir 'Ingrese el tamaÃ±o de uva (1 o 2)';
 	Leer porteuva;
 	
 	Si (tipouva="a" O  tipouva="A") Y porteuva = 1 Entonces
@@ -414,11 +414,11 @@ Funcion  ejercicio12()
 	
 FinFuncion
 
-//Se solicita calcular el costo total de un viaje en autobús en función del tipo ya sea (A, B o C)
-//La cantidad de kilometros recorridos y el número de personas que viajan 
-//El costo por kilometro varía según el tipo de bus
-//Se calcula el costo total multiplicando el costo por kilometro por el número de pasajeros 
-//Si el número de pasajeros es menor o igual a 20 se considera un costo fijo multiplicando el costo por kilometro por 20
+//Se solicita calcular el costo total de un viaje en autobÃºs en funciÃ³n del tipo ya sea (A, B o C)
+//La cantidad de kilometros recorridos y el nÃºmero de personas que viajan 
+//El costo por kilometro varÃ­a segÃºn el tipo de bus
+//Se calcula el costo total multiplicando el costo por kilometro por el nÃºmero de pasajeros 
+//Si el nÃºmero de pasajeros es menor o igual a 20 se considera un costo fijo multiplicando el costo por kilometro por 20
 //Finalmente se muestra el costo total y el costo por persona
 SubProceso ejercicio13()
 	
@@ -455,8 +455,8 @@ SubProceso ejercicio13()
 FinSubProceso
 
 //Se solicita calcular el costo total de la compra de colas 
-//En función de la cantidad de colas compradas 
-//Si el número de colas es mayor que 23
+//En funciÃ³n de la cantidad de colas compradas 
+//Si el nÃºmero de colas es mayor que 23
 //El precio por unidad es de $0.50, de lo contrario se le agrega un 20% al precio base de $0.50 
 //Se calcula el costo total multiplicando la cantidad de colas por el precio por unidad
 //Luego se calcula el valor del IVA aplicando el 12% al costo total
@@ -494,7 +494,7 @@ Funcion  ejercicio14()
 FinFuncion
 
 //Se solicita al usuario ingresar la cantidad de productos comprados y el precio unitario del producto. 
-//Se determina el descuento aplicable según la cantidad comprada 
+//Se determina el descuento aplicable segÃºn la cantidad comprada 
 //Se calcula el total a pagar considerando los descuentos
 //Finalmente se muestra la cantidad comprada 
 //El precio original 
@@ -532,17 +532,17 @@ Funcion  ejercicio15()
 	
 FinFuncion
 
-//Se solicita al usuario ingresar el número de cita 
+//Se solicita al usuario ingresar el nÃºmero de cita 
 //Luego se determina el precio de la cita
-//Se calcula el total a pagar según la cantidad de citas
-//El precio de la cita varía según el rango de citas 
+//Se calcula el total a pagar segÃºn la cantidad de citas
+//El precio de la cita varÃ­a segÃºn el rango de citas 
 //Finalmente se muestra el valor de la cita individual
 //El valor total por el tratamiento.
 Funcion  ejercicio16()
 	
 	Definir cita,precioC,total Como Entero;
 	
-	Escribir "Ingrese el número de cita: ";
+	Escribir "Ingrese el nÃºmero de cita: ";
 	Leer cita;
 	
 	Si cita <= 3 Entonces;
@@ -569,13 +569,13 @@ Funcion  ejercicio16()
 	
 FinFuncion
 
-//Se solicita al usuario ingresar el código del artículo (1-6) y el costo de la materia prima 
+//Se solicita al usuario ingresar el cÃ³digo del artÃ­culo (1-6) y el costo de la materia prima 
 //Se calcula el costo de la mano de obra
-//El costo de fabricación según el código ingresado 
-//Se calcula el costo de producción sumando el costo de la materia prima
+//El costo de fabricaciÃ³n segÃºn el cÃ³digo ingresado 
+//Se calcula el costo de producciÃ³n sumando el costo de la materia prima
 //El costo de la mano de obra
-//El costo de fabricación. 
-//Finalmente se calcula el precio de venta agregando al costo de producción un 45% adicional.
+//El costo de fabricaciÃ³n. 
+//Finalmente se calcula el precio de venta agregando al costo de producciÃ³n un 45% adicional.
 Funcion  ejercicio17()
 	
 	Definir codigo Como Entero;
@@ -625,12 +625,12 @@ Funcion  ejercicio17()
 FinFuncion
 
 //Se define la variable tarjeta como un entero para almacenar el tipo de tarjeta
-//Se definen las variables "limite", "tipo1", "tipo2", "tipo3", "tipox" y "resultado" como números reales
-//Se solicita al usuario que ingrese el tipo de tarjeta y el límite actual de la tarjeta
-//Usando una estructura de selección múltiple (segun-segun) 
-//Se determina el aumento del límite de acuerdo con el tipo de tarjeta ingresado. 
-//Se asigna el nuevo límite calculado a la variable "resultado"
-//Finalmente se muestra en pantalla el nuevo límite de la tarjeta
+//Se definen las variables "limite", "tipo1", "tipo2", "tipo3", "tipox" y "resultado" como nÃºmeros reales
+//Se solicita al usuario que ingrese el tipo de tarjeta y el lÃ­mite actual de la tarjeta
+//Usando una estructura de selecciÃ³n mÃºltiple (segun-segun) 
+//Se determina el aumento del lÃ­mite de acuerdo con el tipo de tarjeta ingresado. 
+//Se asigna el nuevo lÃ­mite calculado a la variable "resultado"
+//Finalmente se muestra en pantalla el nuevo lÃ­mite de la tarjeta
 Funcion ejercicio18()
 	
 	definir tarjeta como entero;
@@ -657,13 +657,13 @@ Funcion ejercicio18()
 FinFuncion
 
 //Se define la variable "zona" como un entero para almacenar el destino del paquete
-//Las variables "peso" y "resultado" como números reales
+//Las variables "peso" y "resultado" como nÃºmeros reales
 //Se muestra una lista de las zonas disponibles y
 //Se solicita al usuario que ingrese el destino y el peso del paquete
 //Se verifica si el peso del paquete excede los 5000 gramos, 
 //En cuyo caso se muestra un mensaje indicando que no se puede transportar
-//De lo contrario, se utiliza una estructura de selección múltiple (según-segun) 
-//para determinar el costo del envío según la zona seleccionada 
+//De lo contrario, se utiliza una estructura de selecciÃ³n mÃºltiple (segÃºn-segun) 
+//para determinar el costo del envÃ­o segÃºn la zona seleccionada 
 //El resultado se almacena en la variable "resultado" y se muestra en pantalla
 Funcion ejercicio19()
 	
@@ -683,7 +683,7 @@ Funcion ejercicio19()
 	Leer peso;
 	
 	Si (peso>5000) Entonces
-		Escribir "Por politicas de la compañia";
+		Escribir "Por politicas de la compaÃ±ia";
 		Escribir "Paquetes mayor a 5kg no pueden ser transportados";
 	SiNo
 		Si zona=1 Entonces
@@ -729,12 +729,12 @@ Funcion ejercicio20()
 	
 FinFuncion
 
-//Se definen las variables num1, num2, num3, y num4 como enteros para almacenar los números ingresados por el usuario
-//Se solicita al usuario que ingrese los cuatro números
+//Se definen las variables num1, num2, num3, y num4 como enteros para almacenar los nÃºmeros ingresados por el usuario
+//Se solicita al usuario que ingrese los cuatro nÃºmeros
 //Luego se verifica si num1 es igual a la mitad de num2
 //Dependiendo del resultado
 //Se muestra un mensaje indicando si es la mitad o no
-//Luego se verifica si num3 es divisible por 4 utilizando el operador módulo (%)
+//Luego se verifica si num3 es divisible por 4 utilizando el operador mÃ³dulo (%)
 //Si el resultado es cero, se muestra un mensaje indicando que es divisible por 4
 //De lo contrario se muestra un mensaje indicando que no es divisible
 Funcion ejercicio21()
@@ -758,12 +758,12 @@ Funcion ejercicio21()
 		
 FinFuncion
 
-//Se definen las variables num1, num2 y num3 como enteros para almacenar los números ingresados por el usuario
-//Se solicita al usuario que ingrese los tres números
+//Se definen las variables num1, num2 y num3 como enteros para almacenar los nÃºmeros ingresados por el usuario
+//Se solicita al usuario que ingrese los tres nÃºmeros
 //Luego se verifica si num1 es igual al doble de num2 
-//Si también es igual al 80% de num3. 
+//Si tambiÃ©n es igual al 80% de num3. 
 //Dependiendo del resultado, 
-//se muestra un mensaje indicando que cumple con la condición indicada o que no cumple
+//se muestra un mensaje indicando que cumple con la condiciÃ³n indicada o que no cumple
 Funcion ejercicio22()
 	
 	Definir  num1, num2, num3 Como Entero;
@@ -779,12 +779,12 @@ Funcion ejercicio22()
 	
 FinFuncion
 
-//Se define la variable dia como un entero para almacenar el número ingresado por el usuario
-//Luego se solicita al usuario que ingrese un número del 1 al 7 lo que representa un día de la semana
+//Se define la variable dia como un entero para almacenar el nÃºmero ingresado por el usuario
+//Luego se solicita al usuario que ingrese un nÃºmero del 1 al 7 lo que representa un dÃ­a de la semana
 //Usando la estructura Segun
 //Se compara el valor de dia con los diferentes casos del 1 al 7
-//Dependiendo del número ingresado se muestra el nombre correspondiente al día de la semana
-//Si se ingresa un número que no está en el rango del 1 al 7
+//Dependiendo del nÃºmero ingresado se muestra el nombre correspondiente al dÃ­a de la semana
+//Si se ingresa un nÃºmero que no estÃ¡ en el rango del 1 al 7
 //se muestra un mensaje de error
 Funcion ejercicio23()
 	
@@ -814,12 +814,12 @@ Funcion ejercicio23()
 	
 FinFuncion
 
-//Se define la variable mes como un entero para almacenar el número ingresado por el usuario
-//Luego se solicita al usuario que ingrese un número del 1 al 12 lo que representa un mes del año
+//Se define la variable mes como un entero para almacenar el nÃºmero ingresado por el usuario
+//Luego se solicita al usuario que ingrese un nÃºmero del 1 al 12 lo que representa un mes del aÃ±o
 //Usando la estructura Segun
 //Se compara el valor de mes con los diferentes casos del 1 al 12
-//Dependiendo del número ingresado se muestra el nombre correspondiente al mes del año
-//Si se ingresa un número que no está en el rango del 1 al 12
+//Dependiendo del nÃºmero ingresado se muestra el nombre correspondiente al mes del aÃ±o
+//Si se ingresa un nÃºmero que no estÃ¡ en el rango del 1 al 12
 //se muestra un mensaje de error
 Funcion ejercicio24()
 	
@@ -858,7 +858,7 @@ Funcion ejercicio24()
 	
 FinFuncion
 
-//Se definen las variables estatura, suma, personas y c como números reales
+//Se definen las variables estatura, suma, personas y c como nÃºmeros reales
 //Se inicializa c en 1 y suma en 0
 //Luego se solicita al usuario que ingrese el total de personas
 //Usando la estructura Mientras
@@ -866,7 +866,7 @@ FinFuncion
 //Dentro del bucle
 //se solicita al usuario que ingrese la estatura de una persona 
 //Se suma a suma y se incrementa el valor de c en 1
-//Después de salir del bucle
+//DespuÃ©s de salir del bucle
 //Se calcula el promedio de la estatura dividiendo suma entre personas y se muestra el resultado
 Funcion ejercicio25()
 	
@@ -889,11 +889,11 @@ Funcion ejercicio25()
 	
 FinFuncion
 
-//se define la variable x como un número entero
+//se define la variable x como un nÃºmero entero
 //Se utiliza la estructura Para para iterar desde 1 hasta 100 con un paso de 1 
 //Dentro del bucle 
-//Se verifica si el valor de x es divisible por 2 (es decir, si es par) utilizando la operación mod 
-//Si la condición es verdadera se muestra en pantalla que el número es par
+//Se verifica si el valor de x es divisible por 2 (es decir, si es par) utilizando la operaciÃ³n mod 
+//Si la condiciÃ³n es verdadera se muestra en pantalla que el nÃºmero es par
 Funcion ejercicio26()
 	
 	Definir x Como Entero;
@@ -906,12 +906,12 @@ Funcion ejercicio26()
 	
 FinFuncion
 
-//Se le pide al usuario que ingrese la cantidad de números que desea sumar y se almacena en la variable z
+//Se le pide al usuario que ingrese la cantidad de nÃºmeros que desea sumar y se almacena en la variable z
 //Se inicializa la variable suma en 0
 //Luego se utiliza un bucle Para para iterar desde 1 hasta el valor ingresado en z, con un paso de 1 
-//Dentro del bucle se le pide al usuario que ingrese un número en cada iteración y se almacena en la variable x 
+//Dentro del bucle se le pide al usuario que ingrese un nÃºmero en cada iteraciÃ³n y se almacena en la variable x 
 //Luego se suma el valor de x a la variable suma
-//Después de que el bucle haya terminado de ejecutarse 
+//DespuÃ©s de que el bucle haya terminado de ejecutarse 
 //Se muestra en pantalla el valor acumulado de la suma almacenado en la variable suma
 Funcion ejercicio27()
 
@@ -930,14 +930,14 @@ Funcion ejercicio27()
 	
 FinFuncion 
 
-//se definen las variables edad, personas, i, promedio y suma como números enteros
+//se definen las variables edad, personas, i, promedio y suma como nÃºmeros enteros
 //Se le pide al usuario que ingrese por teclado la cantidad de personas y se almacena en la variable personas
 //Se inicializan las variables suma y promedio en 0
 //Luego se utiliza un bucle Para para iterar desde 1 hasta el valor ingresado en personas, con un paso de 1 
 //Dentro del bucle, se le pide al usuario que ingrese la edad de cada persona y se almacena en la variable edad
 //Luego se suma el valor de edad a la variable suma
-//Después de que el bucle haya terminado de ejecutarse
-//Se calcula el promedio dividiendo la suma acumulada en suma entre el número de personas en personas y se almacena en la variable promedio
+//DespuÃ©s de que el bucle haya terminado de ejecutarse
+//Se calcula el promedio dividiendo la suma acumulada en suma entre el nÃºmero de personas en personas y se almacena en la variable promedio
 //Finalmente se muestra en pantalla el mensaje con el promedio de edad de las personas ingresadas
 Funcion ejercicio28()
 
@@ -961,12 +961,12 @@ Funcion ejercicio28()
 
 FinFuncion
 
-//Se definen las variables horas, pagohora, sueldo, dias, i, suma y pagodiario como números enteros
+//Se definen las variables horas, pagohora, sueldo, dias, i, suma y pagodiario como nÃºmeros enteros
 //Se le pide al usuario que ingrese las horas trabajadas en horas y el pago por hora en pagohora 
-//Luego se le solicita que ingrese la cantidad de días trabajados en dias
+//Luego se le solicita que ingrese la cantidad de dÃ­as trabajados en dias
 //Se calcula el pago diario multiplicando pagohora por horas y se almacena en la variable pagodiario
 //Luego se calcula el sueldo multiplicando pagodiario por dias y se almacena en la variable sueldo
-//Finalmente se muestran en pantalla los mensajes que indican el sueldo a pagar por los días de trabajo y 
+//Finalmente se muestran en pantalla los mensajes que indican el sueldo a pagar por los dÃ­as de trabajo y 
 //El total a pagar por las horas trabajadas diariamente
 Funcion ejercicio29()
 	
@@ -987,20 +987,20 @@ Funcion ejercicio29()
 	
 FinFuncion
 
-//Se definen las variables ventas, precio, i, precio1, precio51, precio5, total1, total51 y total5 como números enteros
+//Se definen las variables ventas, precio, i, precio1, precio51, precio5, total1, total51 y total5 como nÃºmeros enteros
 //Se le pide al usuario que ingrese la cantidad de ventas en ventas
 //Se inicializan las variables precio1, precio51 y precio5 en 0
-//Que se utilizarán para contar el número de ventas en diferentes rangos de precios
-//También se inicializan las variables total1, total51 y total5 en 0
-//Que se utilizarán para almacenar el total de ventas en diferentes rangos de precios
+//Que se utilizarÃ¡n para contar el nÃºmero de ventas en diferentes rangos de precios
+//TambiÃ©n se inicializan las variables total1, total51 y total5 en 0
+//Que se utilizarÃ¡n para almacenar el total de ventas en diferentes rangos de precios
 //Luego se inicia un bucle Para desde 1 hasta ventas para solicitar al usuario el valor de cada venta en precio
 //Dentro del bucle se verifica el valor de precio
 //Se incrementa el contador correspondiente
-//El total acumulado en función de diferentes rangos de precios
-//Después de completar el bucle, se muestran en pantalla los resultados 
-//El número de ventas
+//El total acumulado en funciÃ³n de diferentes rangos de precios
+//DespuÃ©s de completar el bucle, se muestran en pantalla los resultados 
+//El nÃºmero de ventas
 //El total de ventas para cada rango de precios
-//El número total de ventas 
+//El nÃºmero total de ventas 
 //El total global de todas las ventas
 Funcion ejercicio30()
 	
@@ -1050,14 +1050,14 @@ FinFuncion
 //Se definen las variables ventas, precio, i, precio1, precio51, precio5, total1, total51 y total5 como numeros enteros
 //Se le pide al usuario que ingrese la cantidad de ventas en ventas
 //Se inicializan las variables precio1, precio51 y precio5 en 0 
-//Que se utilizarán para contar el número de ventas en diferentes rangos de precios
-//También se inicializan las variables total1, total51 y total5 en 0
-//Que se utilizarán para almacenar el total de ventas en diferentes rangos de precios
+//Que se utilizarÃ¡n para contar el nÃºmero de ventas en diferentes rangos de precios
+//TambiÃ©n se inicializan las variables total1, total51 y total5 en 0
+//Que se utilizarÃ¡n para almacenar el total de ventas en diferentes rangos de precios
 //Luego se inicia un bucle Para desde 1 hasta ventas para solicitar al usuario el valor de cada venta en precio
 //Dentro del bucle se verifica el valor de precio
 //Se incrementa el contador correspondiente
-//El total acumulado en función de diferentes rangos de precios
-//Después de completar el bucle
+//El total acumulado en funciÃ³n de diferentes rangos de precios
+//DespuÃ©s de completar el bucle
 //se muestran en pantalla los resultados
 //El numero de ventas
 //El total de ventas para cada rango de precios, 
@@ -1082,7 +1082,7 @@ Funcion ejercicio31()
 	
 	Para i <- 1 Hasta n Hacer
 		Escribir "Alumno ", i
-		Escribir "Ingrese la nota final de la asignatura Lógica: "
+		Escribir "Ingrese la nota final de la asignatura LÃ³gica: "
 		Leer notafinal
 		sumalogica <- sumalogica + notafinal
 		
@@ -1090,7 +1090,7 @@ Funcion ejercicio31()
 		Leer notafinal
 		sumarequerimientos <- sumarequerimientos + notafinal
 		
-		Escribir "Ingrese la nota final de la asignatura Cálculos: "
+		Escribir "Ingrese la nota final de la asignatura CÃ¡lculos: "
 		Leer notafinal
 		sumacalculos <- sumacalculos + notafinal
 		
@@ -1102,9 +1102,9 @@ Funcion ejercicio31()
 	promediocalculos <- suma_calculos / n
 	promediogeneral <- (sumalogica + sumarequerimientos + sumacalculos) / (n * 3)
 	
-	Escribir "Promedio de la asignatura Lógica: ", promediologica
+	Escribir "Promedio de la asignatura LÃ³gica: ", promediologica
 	Escribir "Promedio de la asignatura Requerimientos: ", promediorequerimientos
-	Escribir "Promedio de la asignatura Cálculos: ", promediocalculos
+	Escribir "Promedio de la asignatura CÃ¡lculos: ", promediocalculos
 	Escribir "Promedio general de todas las asignaturas: ", promediogeneral
 FinFuncion
 
@@ -1114,12 +1114,12 @@ FinFuncion
 //Luego se inicializan las variables auxiliar, agregado, principal, sueldo10, sueldo20, sueldo50, bono10, bono20 y bono50 en 0
 //Se inicia un bucle Mientras que se ejecuta hasta que la suma de auxiliar, agregado y principal sea menor que maestros
 //Dentro del bucle
-//se solicita al usuario que ingrese la categoría del maestro en categoria
-//Según la categoría ingresada, se solicita el sueldo correspondiente y se calcula el bono
-//Se actualizan los contadores y totales de acuerdo a la categoría y se acumulan los sueldos y bonos correspondientes
-//Después de salir del bucle 
-//Se muestran en pantalla los promedios de sueldos y bonos para cada categoría
-//Dividiendo los totales acumulados por el número de maestros en cada categoría
+//se solicita al usuario que ingrese la categorÃ­a del maestro en categoria
+//SegÃºn la categorÃ­a ingresada, se solicita el sueldo correspondiente y se calcula el bono
+//Se actualizan los contadores y totales de acuerdo a la categorÃ­a y se acumulan los sueldos y bonos correspondientes
+//DespuÃ©s de salir del bucle 
+//Se muestran en pantalla los promedios de sueldos y bonos para cada categorÃ­a
+//Dividiendo los totales acumulados por el nÃºmero de maestros en cada categorÃ­a
 Funcion ejercicio32()
 	
 	Definir categoria Como Caracter;
@@ -1190,10 +1190,10 @@ Funcion ejercicio32()
 FinFuncion
 
 //Se solicita ingresar la cantidad de viajes realizados
-//Los kilómetros recorridos en cada viaje
+//Los kilÃ³metros recorridos en cada viaje
 //Luego  se calcula el pasaje correspondiente para cada recorrido
 //Contabilizando la cantidad de pasajes con recorrido hasta 100 km y mayor a 100 km
-//También calcula el promedio de precios de los pasajes 
+//TambiÃ©n calcula el promedio de precios de los pasajes 
 //Finalmente se muestra los resultados por pantalla
 Funcion ejercicio33()
 	
@@ -1234,74 +1234,68 @@ Funcion ejercicio33()
 	
 FinFuncion 
 
-//En este bosquejo te permite ingresar varios números hasta que se ingrese el número 0 
-//Durante la repetición 
-//Se realiza la suma de los números distintos de cero y se incrementa el contador totaldenumeros
-//Cuando se ingresa el número 0, se verifica si se ingresaron números distintos de cero
-//Si es así, se calcula el promedio y se muestra la cantidad de números distintos de cero y el promedio
-//Si no se ingresaron números distintos de cero, se muestra un mensaje indicando que no se ingresaron valores
-//La repetición continúa hasta que se ingrese el número 0
+//En este bosquejo te permite ingresar varios nÃºmeros hasta que se ingrese el nÃºmero 0 
+//Durante la repeticiÃ³n 
+//Se realiza la suma de los nÃºmeros distintos de cero y se incrementa el contador totaldenumeros
+//Cuando se ingresa el nÃºmero 0, se verifica si se ingresaron nÃºmeros distintos de cero
+//Si es asÃ­, se calcula el promedio y se muestra la cantidad de nÃºmeros distintos de cero y el promedio
+//Si no se ingresaron nÃºmeros distintos de cero, se muestra un mensaje indicando que no se ingresaron valores
+//La repeticiÃ³n continÃºa hasta que se ingrese el nÃºmero 0
 Funcion ejercicio34()
 	
-	Definir n Como Entero;
-	Definir suma, totaldenumeros, cantidad, promedio Como Real;
+	Definir n, n2, n3 Como real;
 	
-	suma <- 0;
-	totaldenumeros <- 0;
-	cantidad <- 0;
+	n2 <- 0;
+	n3 <- 0;
 	
 	Repetir
-		Escribir "Ingrese varios numeros (finaliza cuando se ingresa el numero 0)";
+		
+		Escribir "Ingrese un numero";
 		Leer n;
 		
 		Si n <> 0 Entonces
-			suma <- suma + n;
-			totaldenumeros <- totaldenumeros + 1;
-		SiNo
-			Si totaldenumeros > 0 Entonces
-				promedio <- (suma / totaldenumeros);
-				Escribir "Cantidad de números distintos de cero: ", totaldenumeros;
-				Escribir "Promedio de los números distintos de cero es: ", (suma/totaldenumeros);
-			Sino
-				Escribir "No se ingresaron valores distintos de cero.";
-			FinSi
+			n2 <- n2 + 1;
+			n3 <- n3 + n;
 		FinSi
+		
 	Hasta Que n = 0
+	
+	Si  n2 > 0 Entonces
+		Escribir "Cantidad de numeros distintos de 0 es: ", n2;
+		Escribir "Promedio de los numeros distintos de 0 es: ", n3/n2;
+	FinSi
 	
 FinFuncion
 
 //Se solicita al usuario ingresar un numero positivo
 //Si el numero ingresado es mayor que cero y es multiplo de 3
 //Se incrementa el contador cantidad y se suma el numero al total 
-//El programa sigue solicitando números positivos hasta que se ingrese un número negativo
-//Finalmente se muestra la cantidad de números positivos múltiplos de 3 ingresados y el total de estos números
+//El programa sigue solicitando nÃºmeros positivos hasta que se ingrese un nÃºmero negativo
+//Finalmente se muestra la cantidad de nÃºmeros positivos mÃºltiplos de 3 ingresados y el total de estos nÃºmeros
 Funcion ejercicio35()
 	
-	Definir num, positivos, multiplosdetres Como Entero;
-	Definir totaldetres Como Real;
+	Definir n, n2, n3 Como entero;
 	
-	positivos <- 0;
-	multiplosdetres <- 0;
+	n2 <- 0;
+	n3 <- 0;
 	
-	Repetir 
-		Escribir "Ingrese un número positivo (ingrese un número negativo para terminar): ";
-		Leer num;
+	Repetir
+		Escribir "Ingrese un numero";
+		Leer n;
 		
-		Si num >= 0 Entonces
-			Si num mod 3 = 0 Entonces;
-				positivos <- positivos + 1;
-				multiplosdetres <- multiplosdetres + num;
+		Si n >= 0 Entonces
+			Si n mod 3 = 0 Entonces
+				n2 <- n2 + 1;
+				n3 <- n3 + n;
 			FinSi
-			
-			Escribir "Número ingresado: ", num;
 		FinSi
-	Hasta que num < 0
+	Hasta Que n < 0
 	
-	Si positivos > 0 Entonces
-		Escribir "Cantidad de números positivos múltiplos de tres: ", positivos;
-		Escribir "Total de números positivos múltiplos de tres: ", multiplosdetres;
-	Sino
-		Escribir "No se ingresaron números positivos múltiplos de tres ";
+	Si n2 > 0 Entonces
+		Escribir "Cantidad de numeros multiplos de 3: ", n2;
+		Escribir "Suma de los numeros multiplos de 3: ", n3;
+	SiNo
+		Escribir "No se han ingresado numeros multiplos de 3";
 	FinSi
 	
 FinFuncion
@@ -1338,7 +1332,7 @@ Proceso selectivo
 	//ejercicio28();
 	//ejercicio29();
 	//ejercicio30();
-	//jercicio31();
+	//ejercicio31();
 	//ejercicio32();
 	//ejercicio33();
 	//ejercicio34();
