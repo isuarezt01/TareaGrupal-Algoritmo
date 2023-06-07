@@ -714,18 +714,66 @@ FinFuncion
 
 Funcion ejercicio20()
 	
-	Definir peso Como Real;
+		Definir peso como real;
+	Definir menosde40, entre40y50, mas50menos60, totalalumnos, masde60 como reales;
+    Definir sumamenos40, sumentre40y50, sumamas50menos60, sumamas60 como reales;
+	Definir promenos40, proentre40y50, promas50menos60, promas60 como reales;
 	
-	Escribir 'Ingrese el peso';
-	Leer peso;
+	menosde40 <- 0;
+	entre40y50 <- 0;
+	mas50menos60 <- 0;
+	masde60 <- 0;
 	
-	Mientras peso<>0 Hacer
-		Si peso<40 Entonces
-			Escribir 'Ingrese el peso';
+	sumamenos40 <- 0;
+	sumentre40y50 <- 0;
+	sumamas50menos60 <-0;
+	sumamas60 <- 0;
+	
+	promenos40 <- 0;
+	proentre40y50 <- 0;
+	promas50menos60 <- 0;
+	promas60 <- 0;
+
+	Escribir "Ingrese el peso del alumno: (Digite 0 para cerrar) ";
+	leer peso;
+	
+	Mientras peso <> 0 Hacer
+		
+		Si peso < 40 Entonces
+			menosde40 <- menosde40 + 1;
+			sumamenos40 <- sumamenos40 + peso;
+			promenos40 <- sumamenos40 / menosde40;
 		SiNo
-			Escribir 'Ingrese el peso';
+			Si peso >= 40 y peso < 50 Entonces
+				entre40y50 <- entre40y50 + 1;
+				sumentre40y50 <- sumentre40y50 + peso;
+				proentre40y50 <- sumentre40y50 / entre40y50;
+			SiNo
+				Si peso >= 50 y peso < 60 Entonces
+					mas50menos60 <- mas50menos60 + 1;
+					sumamas50menos60 <- sumamas50menos60 + peso;
+					promas50menos60 <- sumamas50menos60 / mas50menos60;
+				SiNo
+					Si peso >= 60 Entonces
+						masde60 <- masde60 + 1;
+						sumamas60 <- sumamas60 + Peso;
+						promas60 <- sumamas60 / masde60;
+					FinSi
+				FinSi
+			FinSi
 		FinSi
+		
+	leer peso;	
 	FinMientras
+	
+	Escribir "Alumnos con menos de 40 kg de peso: ", menosde40;
+	Escribir "Promedio del peso de alumnos con menos de 40 kg: ", promenos40;
+	Escribir "Alumnos de entre 40 y 50 kg de peso: ", entre40y50;
+	Escribir "Promedio del peso de alumnos entre 40 y 50 kg: ", proentre40y50;
+	Escribir "Alumnos con más de 50 y menos de 60 kg de peso: ", mas50menos60;
+	Escribir "Promedio de peso para alumnos más de 50 y menos de 60 kg: ", promas50menos60;
+	Escribir "Alumnos con de más de 60 kg de peso: ", masde60;
+	Escribir "Promedio del peso de alumnos de mas de 60 kg: ", promas60;
 	
 FinFuncion
 
